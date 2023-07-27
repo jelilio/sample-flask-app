@@ -21,7 +21,8 @@ Install Python Flask dependency
 pip install -r requirements.txt
 
 - Copy app.py or download it from source repository
-- Configure database credentials and parameters
+- Copy /templates directory or download it from source repository
+- Configure database by copying the /instances directory
 
 ## 3. Start Web Server
 
@@ -34,3 +35,7 @@ FLASK_APP=app.py flask run --host=0.0.0.0
 Open a browser and go to URL
 
 http://<IP>:5000 => Homepage
+
+## Using Docker
+
+docker run -p <PORT>:5000 jelilio/my-simple-todo-app
